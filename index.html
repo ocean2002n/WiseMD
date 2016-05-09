@@ -1,420 +1,676 @@
+﻿
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>WiseMD - An Exclusive Freebie for Codrops by Peter Finlan.</title>
-    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/flexslider.css" rel="stylesheet" >
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="css/queries.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-      </head>
-      <body id="top">
-        <header id="home">
-          <nav>
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
-                  <nav class="pull">
-                    <ul class="top-nav">
-                      <li><a href="#intro">有關我們 <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                      <li><a href="#features">特色 <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                      <li><a href="#responsive">Responsive Design <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                      <li><a href="#portfolio">Portfolio <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                      <li><a href="#team">我們團隊 <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                      <li><a href="#contact">聯繫我們 <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
-          </nav>
-          <section class="hero" id="hero">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12 text-right navicon">
-                  <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-8 col-md-offset-2 text-center inner">
-                  <h1 class="animated fadeInDown">WISE<span>MD</span></h1>
-                  <p class="animated fadeInUp delay-05s">我們是專注於失智症照護的新創團隊</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center">
-                  <a href="#contact" class="learn-more-btn">連繫我們</a>
-                </div>
-              </div>
-            </div>
-          </section>
-        </header>
-        <section class="intro text-center section-padding" id="intro">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-8 col-md-offset-2 wp1">
-                <h1 class="arrow">有關我們</h1>
-                <p>Sed a lorem quis neque interdum <a href="#">consequat ut sed sem</a>. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent id tempor ipsum. Fusce at massa ac nunc porta fringilla sed eget neque. Quisque quis pretium nulla. Fusce eget bibendum neque, vel volutpat augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="features text-center section-padding" id="features">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <h1 class="arrow">Love what you do, and you'll do it well</h1>
-                <div class="features-wrapper">
-                  <div class="col-md-4 wp2">
-                    <div class="icon">
-                      <i class="fa fa-laptop shadow"></i>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Outline &mdash; A Free HTML5 Responsive Template by FREEHTML5.CO</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="codxFrankenstein" />
+
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Google Webfonts -->
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!--<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>-->
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanstc.css"/>
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Simple Line Icons-->
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Salvattore -->
+	<link rel="stylesheet" href="css/salvattore.css">
+	<!-- Theme Style -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+	<div id="fh5co-offcanvass">
+		<ul>
+			<li class="active"><a href="#" data-nav-section="home">首頁</a></li>
+			<li><a href="#" data-nav-section="features">有關我們</a></li>
+			<li><a href="#" data-nav-section="design">問卷調查</a></li>
+			<li><a href="#" data-nav-section="testimonies">常見問題</a></li>
+			<li><a href="#" data-nav-section="products">聯絡我們</a></li>
+		</ul>
+		<!--<h3 class="fh5co-lead">Connect with us</h3>
+		<p class="fh5co-social-icons">
+			<a href="#"><i class="icon-twitter"></i></a>
+			<a href="#"><i class="icon-facebook"></i></a>
+			<a href="#"><i class="icon-instagram"></i></a>
+			<a href="#"><i class="icon-dribbble"></i></a>
+			<a href="#"><i class="icon-youtube"></i></a>
+		</p>-->
+	</div>
+	
+	<div id="fh5co-menu" class="navbar">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#fh5co-navbar" aria-expanded="false" aria-controls="navbar"><span>Menu</span> <i></i></a>
+					<a href="index.html" class="navbar-brand"><span>WISEMD</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-page">
+		<div id="fh5co-wrap">
+			<header id="fh5co-hero" data-section="home" role="banner" style="background: url(images/bg_2.jpg) top left; background-size: cover;" >
+				<div class="fh5co-overlay"></div>
+				<div class="fh5co-intro">
+					<div class="container">
+						<div class="row">
+							
+							<div class="col-md-6 fh5co-text">
+								<h2 class="to-animate intro-animate-1">安心顧</h2>
+								<!--<p class="to-animate intro-animate-2">GoHoHo,替你顧好老大人</p>-->
+                                <p class="to-animate intro-animate-2">回想起來，小時候，最期待的倒不是爸媽又買了甚麼禮物。最期待的，其實是陪伴。
+                                    有人在你身邊陪你聊天，說說笑，看著電視大笑，在你需要的時候扶著你走，在你不舒服的時候餵你吃碗粥。是時候，換我們用溫暖來牽著父母的手了。你想怎麼陪伴你的父母親呢?我知道你只想給父母最好的，心暖藉由我們的專業，傳達你的感謝。</p>
+                                <p class="to-animate intro-animate-3"><a href="#" class="btn btn-primary btn-md"> 我是照護者 </a>
+                                <p class="to-animate intro-animate-3"><a href="#" class="btn btn-primary btn-md"> 我是使用者 </a></p>
+							</div>
+							<div class="col-md-6 text-right fh5co-intro-img to-animate intro-animate-4">
+								<img src="images/iphone_6_3.png">
+							</div>
+
+						</div>
+					</div>						
+				</div>
+			</header>
+			<!-- END .header -->
+			
+			<div id="fh5co-main">
+				<!--<div id="fh5co-clients">
+					<div class="container">
+						<div class="row text-center">
+							<div class="col-md-3 col-sm-6 col-xs-6 to-animate">
+								<figure class="fh5co-client"><img src="images/client_1.png" alt="Free HTML5 Template"></figure>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 to-animate">
+								<figure class="fh5co-client"><img src="images/client_2.png" alt="Free HTML5 Template"></figure>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 to-animate">
+								<figure class="fh5co-client"><img src="images/client_3.png" alt="Free HTML5 Template"></figure>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 to-animate">
+								<figure class="fh5co-client"><img src="images/client_4.png" alt="Free HTML5 Template"></figure>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="fh5co-features" data-section="features">
+
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
+								<h2 class="fh5co-lead to-animate">Explore amazing features</h2>
+								<p class="fh5co-sub to-animate">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+								<a href="#" class="fh5co-feature to-animate">
+									<span class="fh5co-feature-icon"><i class="icon-mustache"></i></span>
+									<h3 class="fh5co-feature-lead">100% Free</h3>
+									<p class="fh5co-feature-text">Far far away behind the word mountains</p>
+								</a>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+								<a href="#" class="fh5co-feature to-animate">
+									<span class="fh5co-feature-icon"><i class="icon-screen-smartphone"></i></span>
+									<h3 class="fh5co-feature-lead">Fully Responsive</h3>
+									<p class="fh5co-feature-text">Far far away behind the word mountains</p>
+								</a>
+							</div>
+							<div class="clearfix visible-sm-block"></div>
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+								<a href="#" class="fh5co-feature to-animate">
+									<span class="fh5co-feature-icon"><i class="icon-eye"></i></span>
+									<h3 class="fh5co-feature-lead">Retina-ready</h3>
+									<p class="fh5co-feature-text">Far far away behind the word mountains</p>
+								</a>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+								<a href="#" class="fh5co-feature to-animate">
+									<span class="fh5co-feature-icon"><i class="icon-cloud-download"></i></span>
+									<h3 class="fh5co-feature-lead">Download</h3>
+									<p class="fh5co-feature-text">Far far away behind the word mountains</p>
+								</a>
+							</div>
+
+							<div class="clearfix visible-sm-block"></div>
+
+							<div class="fh5co-spacer fh5co-spacer-sm"></div>
+
+							<div class="col-md-4 col-md-offset-4 text-center to-animate">
+								<a href="#" class="btn btn-primary">View All Features</a>
+							</div>
+			        	</div>
+			       </div>
+
+			    </div>-->
+				
+			    <!--<div id="fh5co-features-2" data-section="design">
+					<div class="fh5co-features-2-content">
+					    <div class="container">
+					    	<div class="row">
+					    		<div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
+									<h2 class="fh5co-lead to-animate">Better design</h2>
+									<p class="fh5co-sub to-animate">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								</div>
+					    		<div class="col-md-4 fh5co-text-wrap">
+					    			<div class="row text-center">
+						    			<div class="col-md-12 col-sm-6 col-xs-6 col-xxs-12 fh5co-text animate-object features-2-animate-3">
+						    				<span class="fh5co-icon"><i class="icon-screen-desktop"></i></span>
+											<h4 class="fh5co-uppercase-sm">Cross platform support</h4>
+											<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+										</div>
+										<div class="col-md-12 col-sm-6 col-xs-6 col-xxs-12 fh5co-text animate-object features-2-animate-4">
+											<span class="fh5co-icon"><i class="icon-anchor"></i></span>
+											<h4 class="fh5co-uppercase-sm">Prototyping tools</h4>
+											<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+										</div>
+										
+									</div>
+					    		</div>
+					    		<div class="col-md-4 col-md-push-4 fh5co-text-wrap">
+					    			<div class="row text-center">
+						    			<div class="col-md-12 col-sm-6 col-xs-6 col-xxs-12 fh5co-text animate-object features-2-animate-5">
+						    				<span class="fh5co-icon"><i class="icon-rocket"></i></span>
+											<h4 class="fh5co-uppercase-sm">Powerful design</h4>
+											<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+										</div>
+										<div class="col-md-12 col-sm-6 col-xs-6 col-xxs-12 fh5co-text animate-object features-2-animate-6">
+											<span class="fh5co-icon"><i class="icon-people"></i></span>
+											<h4 class="fh5co-uppercase-sm">User Collaboration</h4>
+											<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+										</div>
+										
+									</div>
+					    		</div>
+					    		<div class="col-md-4 col-md-pull-4 fh5co-image animate-object features-2-animate-2">
+					    			<p class="text-center">
+					    			<img src="images/iphone_blank_2.png" class="" alt="Outline Free HTML5 Responsive Bootstrap Template">
+					    			</p>
+					    		</div>
+					    		
+					    	</div>
+					    </div>
+					</div>	
+
+			    </div>-->
+
+			    <div id="fh5co-testimony" data-section="testimonies">
+				    <div class="container">
+				    	<div class="row animate-box">
+
+							<div class="owl-carousel">
+
+								<div class="item">
+									<div class="col-md-3 col-sm-3 col-xs-4 col-xxs-12">
+						    			<figure class="fh5co-vcard"><img src="images/Frank.jpg" class="img-responsive"></figure>
+						    		</div>
+						    		<div class="col-md-9 col-sm-9 col-xs-8 col-xxs-12">
+						    			<blockquote>
+						    				<p>&ldquo;由於家裡奶奶長期臥病在床，時常需有專業的人每天協助。希望發揮自己在軟體方面的專長協助更多的使用者在平台上快速且方便的找到優質看護，給家中的長輩最好的照顧。&rdquo;</p>
+						    			</blockquote>
+						    			<p class="fh5co-author fh5co-uppercase-sm"><span>Frank Hung</span>, Taipei Neihu</p>
+						    		</div>
+						    	</div>
+
+						    	<div class="item">
+									<div class="col-md-3 col-sm-3 col-xs-4 col-xxs-12">
+						    			<figure class="fh5co-vcard"><img src="images/user_2.jpg" alt="Free HTML5 Template by FREEHTML5.co" class="img-responsive"></figure>
+						    		</div>
+						    		<div class="col-md-9 col-sm-9 col-xs-8 col-xxs-12">
+						    			<blockquote>
+						    				<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+						    			</blockquote>
+						    			<p class="fh5co-author fh5co-uppercase-sm"><span>Gustav Barrow</span>, XYZ Inc.</p>
+						    		</div>
+						    	</div>
+
+						    	<div class="item">
+									<div class="col-md-3 col-sm-3 col-xs-4 col-xxs-12">
+						    			<figure class="fh5co-vcard"><img src="images/user_3.jpg" alt="Free HTML5 Template by FREEHTML5.co" class="img-responsive"></figure>
+						    		</div>
+						    		<div class="col-md-9 col-sm-9 col-xs-8 col-xxs-12">
+						    			<blockquote>
+						    				<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+						    			</blockquote>
+						    			<p class="fh5co-author fh5co-uppercase-sm"><span>Gustav Barrow</span>, XYZ Inc.</p>
+						    		</div>
+						    	</div>
+
+
+						    </div>
+
+				    	</div>
+				    </div>
+			    </div>
+
+			    
+				<div id="fh5co-counter" class="fh5co-bg-section" style="background-image: url(images/bg_1.jpg); background-attachment: fixed;">
+					<div class="fh5co-overlay"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="fh5co-hero-wrap">
+									<div class="fh5co-hero-intro text-center to-animate counter-animate">
+										<div class="col-md-4 text-center">
+											<span class="fh5co-counter js-counter" data-from="0" data-to="28" data-speed="5000" data-refresh-interval="50"></span>
+											<span class="fh5co-counter-label">Customers</span>
+											
+										</div>
+										<div class="col-md-4 text-center">
+											<span class="fh5co-counter js-counter" data-from="0" data-to="57" data-speed="5000" data-refresh-interval="50"></span>
+											<span class="fh5co-counter-label">Care-Giver</span>
+										</div>
+										<div class="col-md-4 text-center">
+											<span class="fh5co-counter js-counter" data-from="0" data-to="34023" data-speed="5000" data-refresh-interval="50"></span>
+											<span class="fh5co-counter-label">Downloads</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<!--<div id="fh5co-products" data-section="products">
+
+				    <div class="container">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
+								<h2 class="fh5co-lead animate-single product-animate-1">Other awesome Apps</h2>
+								<p class="fh5co-sub animate-single product-animate-2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							</div>
+						
+
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+								<a href="images/product_1.jpg" class="fh5co-figure to-animate image-popup">
+									<figure>
+										<img src="images/product_1.jpg" alt="Free HTML5 Responsive Template" class="img-responsive">
+									</figure>
+									<h3 class="fh5co-figure-lead">Product Name</h3>
+									<p class="fh5co-figure-text">Far far away behind the word mountains</p>
+								</a>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+								<a href="images/product_2.jpg" class="fh5co-figure to-animate image-popup">
+									<figure>
+										<img src="images/product_2.jpg" alt="Free HTML5 Responsive Template" class="img-responsive">
+									</figure>
+									<h3 class="fh5co-figure-lead">Product Name</h3>
+									<p class="fh5co-figure-text">Far far away behind the word mountains</p>
+								</a>
+							</div>
+							<div class="clearfix visible-sm-block"></div>
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+								<a href="images/product_3.jpg" class="fh5co-figure to-animate image-popup">
+									<figure>
+										<img src="images/product_3.jpg" alt="Free HTML5 Responsive Template" class="img-responsive">
+									</figure>
+									<h3 class="fh5co-figure-lead">Product Name</h3>
+									<p class="fh5co-figure-text">Far far away behind the word mountains</p>
+								</a>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+								<a href="images/product_4.jpg" class="fh5co-figure to-animate image-popup">
+									<figure>
+										<img src="images/product_4.jpg" alt="Free HTML5 Responsive Template" class="img-responsive">
+									</figure>
+									<h3 class="fh5co-figure-lead">Product Name</h3>
+									<p class="fh5co-figure-text">Far far away behind the word mountains</p>
+								</a>
+							</div>
+
+							<div class="clearfix visible-sm-block"></div>
+
+							<div class="fh5co-spacer fh5co-spacer-sm"></div>
+
+							<div class="col-md-4 col-md-offset-4 text-center to-animate">
+								<a href="#" class="btn btn-primary">View All Products</a>
+							</div>
+			        	</div>
+				    </div>
+				   
+				</div>-->
+
+				<div id="fh5co-features-3" data-section="benefits">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
+								<h2 class="fh5co-lead animate-single features3-animate-1">Benefits of this App</h2>
+								<p class="fh5co-sub animate-single features3-animate-2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							</div>
+
+							<div class="col-md-4 col-sm-6 text-center fh5co-text-wrap">
+								<div class="fh5co-text to-animate">
+				    				<span class="fh5co-icon"><i class="icon-screen-desktop"></i></span>
+									<h4 class="fh5co-uppercase-sm">Cross platform support</h4>
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 text-center fh5co-text-wrap">
+								<div class="fh5co-text to-animate">
+				    				<span class="fh5co-icon"><i class="icon-graph"></i></span>
+									<h4 class="fh5co-uppercase-sm">Cross platform support</h4>
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+								</div>
+							</div>
+							
+							<div class="clearfix visible-sm-block"></div>
+
+							<div class="col-md-4 col-sm-6 text-center fh5co-text-wrap">
+								<div class="fh5co-text to-animate">
+				    				<span class="fh5co-icon"><i class="icon-anchor"></i></span>
+									<h4 class="fh5co-uppercase-sm">Cross platform support</h4>
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+								</div>
+							</div>	
+
+							<div class="col-md-4 col-sm-6 text-center fh5co-text-wrap">
+								<div class="fh5co-text to-animate">
+				    				<span class="fh5co-icon"><i class="icon-camera"></i></span>
+									<h4 class="fh5co-uppercase-sm">Cross platform support</h4>
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+								</div>
+							</div>
+
+							<div class="clearfix visible-sm-block"></div>
+
+							<div class="col-md-4 col-sm-6 text-center fh5co-text-wrap">
+								<div class="fh5co-text to-animate">
+				    				<span class="fh5co-icon"><i class="icon-present"></i></span>
+									<h4 class="fh5co-uppercase-sm">Cross platform support</h4>
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 text-center fh5co-text-wrap">
+								<div class="fh5co-text to-animate">
+				    				<span class="fh5co-icon"><i class="icon-energy"></i></span>
+									<h4 class="fh5co-uppercase-sm">Cross platform support</h4>
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+								</div>
+							</div>
+
+
+
+						</div>
+					</div>
+				</div>
+				
+				<div class="fh5co-bg-section cta" id="fh5co-cta" style="background-image: url(images/hero_bg.jpg); background-attachment: fixed;">
+					<div class="fh5co-overlay"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="fh5co-hero-wrap">
+									<div class="fh5co-hero-intro text-center">
+										<div class="row">
+											<div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
+												<h2 class="fh5co-lead to-animate">問卷調查</h2>
+												<p class="fh5co-sub to-animate">有您的幫助會讓我們做的更好，讓我們服務你，讓世界更美好。</p>
+												<div class="to-animate"><a href="https://drive.google.com/open?id=1Op1wwDiSDjbL2_U1fEOix_S9m-8kQpe_lEvf3EL77W0" target="_blank" class="btn btn-primary">照護者問卷</a></div>
+                                                </p>
+                                                <div class="to-animate"><a href="https://drive.google.com/open?id=1sckOR74LP7wxzCGldL7USSWxbJGMS2BjykfzWSyGGBA" target="_blank" class="btn btn-primary">使用者問卷</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!--<div id="fh5co-pricing" data-section="pricing">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
+								<h2 class="fh5co-lead animate-single pricing-animate-1">Plans built for every one</h2>
+								<p class="fh5co-sub animate-single pricing-animate-2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							</div>
+
+							<div class="col-md-3 to-animate">
+								<a href="#" class="fh5co-figure">
+									<span class="fh5co-price">$1<span>/month</span></span>
+									<h3 class="fh5co-figure-lead">Starter</h3>
+									<p class="fh5co-figure-text">Far far away behind the word mountains</p>
+								</a>
+							</div>
+							<div class="col-md-3 to-animate">
+								<a href="#" class="fh5co-figure">
+									<span class="fh5co-price">$25<span>/month</span></span>
+									<h3 class="fh5co-figure-lead">Regular</h3>
+									<p class="fh5co-figure-text">Far far away behind the word mountains</p>
+								</a>
+							</div>
+							<div class="col-md-3 to-animate">
+								<a href="#" class="fh5co-figure active pricing-feature">
+									<span class="fh5co-price">$59<span>/month</span></span>
+									<h3 class="fh5co-figure-lead">Plus</h3>
+									<p class="fh5co-figure-text">Far far away behind the word mountains</p>
+								</a>
+							</div>
+							<div class="col-md-3 to-animate">
+								<a href="#" class="fh5co-figure">
+									<span class="fh5co-price">$125<span>/month</span></span>
+									<h3 class="fh5co-figure-lead">Enterprise</h3>
+									<p class="fh5co-figure-text">Far far away behind the word mountains</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>-->
+
+				<div id="fh5co-faqs"  data-section="faqs">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
+								<h2 class="fh5co-lead animate-single faqs-animate-1">常見問題</h2>
+								<!--<p class="fh5co-sub animate-single faqs-animate-2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>-->
+							</div>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="faq-accordion active to-animate">
+							<span class="faq-accordion-icon-toggle active"><i class="icon-arrow-down"></i></span>
+							<h3>誰是WiseMD?</h3>
+							<div class="faq-body" style="display: block;">
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+							</div>
+						</div>
+						<div class="faq-accordion to-animate">
+							<span class="faq-accordion-icon-toggle"><i class="icon-arrow-down"></i></span>
+							<h3>我可以如何得知後續消息?</h3>
+							<div class="faq-body">
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+							</div>
+						</div>
+						<div class="faq-accordion to-animate">
+							<span class="faq-accordion-icon-toggle"><i class="icon-arrow-down"></i></span>
+							<h3>網站服務流程大致為何?</h3>
+							<div class="faq-body">
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+							</div>
+						</div>
+						<!--<div class="faq-accordion to-animate">
+							<span class="faq-accordion-icon-toggle"><i class="icon-arrow-down"></i></span>
+							<h3>Which version of iOS do your apps support?</h3>
+							<div class="faq-body">
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+							</div>
+						</div>
+						<div class="faq-accordion to-animate">
+							<span class="faq-accordion-icon-toggle"><i class="icon-arrow-down"></i></span>
+							<h3>What languages are available?</h3>
+							<div class="faq-body">
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+							</div>
+						</div>
+						<div class="faq-accordion to-animate">
+							<span class="faq-accordion-icon-toggle"><i class="icon-arrow-down"></i></span>
+							<h3>I have technical problem, who do I email?</h3>
+							<div class="faq-body">
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+							</div>
+						</div>-->
+					</div>
+				</div>
+
+				<!--<div id="fh5co-subscribe">
+					<div class="container">
+						<div class="row animate-box">
+							<form action="#" method="post">
+								<div class="col-md-3 col-sm-3">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="First Name">
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-3">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Last Name">
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-3">
+									<div class="form-group">
+										<input type="email" class="form-control" placeholder="Email">
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-3">
+									<div class="form-group">
+										<input type="submit" class="btn btn-primary" value="Subscribe">
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>-->
+
+			</div>
+		</div>
+
+		<footer id="fh5co-footer" style="">
+			<div class="fh5co-overlay"></div>
+			<div class="fh5co-footer-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="text-center">
+                            <div class="fh5co-footer-logo"><a href="index.html">WISEMD</a></div>
+                            <p class="fh5co-copyright">&copy; 2016. All Rights Reserved. <br>	by <a href="https://www.facebook.com/hung.frank1" target="_blank"> codxFrankenstein</a> Images: <a href="http://pexels.com/" target="_blank">Pexels</a></p>
+                        </div>
                     </div>
-                    <h2>Digital Design</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
-                    primis in faucibus.</p>
-                  </div>
-                  <div class="col-md-4 wp2 delay-05s">
-                    <div class="icon">
-                      <i class="fa fa-code shadow"></i>
+                            
+                            <!--<div class="row">
+                    <div class="col-md-3 col-sm-4 col-md-push-3">
+                        <h3 class="fh5co-lead">About</h3>
+                        <ul>
+                            <li><a href="#">Tour</a></li>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">New Features</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
                     </div>
-                    <h2>Web Development</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
-                    primis in faucibus.</p>
-                  </div>
-                  <div class="col-md-4 wp2 delay-1s">
-                    <div class="icon">
-                      <i class="fa fa-heart shadow"></i>
+                    <div class="col-md-3 col-sm-4 col-md-push-3">
+                        <h3 class="fh5co-lead">Support</h3>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Security</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">More Apps</a></li>
+                        </ul>
                     </div>
-                    <h2>Creative Direction</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
-                    primis in faucibus.</p>
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="text-center" id="responsive">
-          <div class="container-fluid nopadding responsive-services">
-            <div class="wrapper">
-              <div class="iphone">
-                <div class="wp3"></div>
-              </div>
-              <div class="fluid-white"></div>
-            </div>
-            <div class="container designs">
-              <div class="row">
-                <div class="col-md-5 col-md-offset-7">
-                  <div id="servicesSlider">
-                    <ul class="slides">
-                      <li>
-                        <h1 class="arrow">Responsive Design Specialists</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero. </p>
-                        <p>
-                        Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan. </p>
-                        <p>Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem. Suspendisse sed venenatis odio, quis lobortis eros.</p>
-                      </li>
-                      <li>
-                        <h1 class="arrow">Bootstrap Professionals</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero. </p>
-                        <p>
-                        Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan. </p>
-                        <p>Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem. Suspendisse sed venenatis odio, quis lobortis eros.</p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="swag text-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-8 col-md-offset-2">
-                <h1>I got 99 Problems<span>but <em>design</em> 'aint one</span></h1>
-                <a href="#portfolio" class="down-arrow-btn"><i class="fa fa-chevron-down"></i></a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="portfolio text-center section-padding" id="portfolio">
-          <div class="container">
-            <div class="row">
-              <div id="portfolioSlider">
-                <ul class="slides">
-                  <li>
-                    <div class="col-md-4 wp4">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/portfolio-01.jpg" alt="Portfolio Item">
-                          <div class="overlay">
-                            <a href="#" class="expand"><i class="fa fa-search"></i><br>View More</a>
-                            <a class="close-overlay hidden">x</a>
-                          </div>
-                        </div>
-                      </div>
-                      <h2>Creative Minds</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                    <div class="col-md-3 col-sm-4 col-md-push-3">
+                        <h3 class="fh5co-lead">More Links</h3>
+                        <ul>
+                            <li><a href="#">Feedback</a></li>
+                            <li><a href="#">Frequently Ask Questions</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">More Apps</a></li>
+                        </ul>
                     </div>
-                    <div class="col-md-4 wp4 delay-05s">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/portfolio-02.jpg" alt="Portfolio Item">
-                          <div class="overlay">
-                            <a href="#" class="expand"><i class="fa fa-search"></i><br>View More</a>
-                            <a class="close-overlay hidden">x</a>
-                          </div>
-                        </div>
-                      </div>
-                      <h2>Creative Hearts</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+
+                    <div class="col-md-3 col-sm-12 col-md-pull-9">
+                        <div class="fh5co-footer-logo"><a href="index.html">WISEMD</a></div>
+                        <p class="fh5co-copyright"><small>&copy; 2016. All Rights Reserved. <br>	by <a href="https://www.facebook.com/hung.frank1" target="_blank"> codxFrankenstein</a> Images: <a href="http://pexels.com/" target="_blank">Pexels</a></small></p>
+                        <p class="fh5co-social-icons">
+                            <a href="#"><i class="icon-twitter"></i></a>
+                            <a href="#"><i class="icon-facebook"></i></a>
+                            <a href="#"><i class="icon-instagram"></i></a>
+                            <a href="#"><i class="icon-dribbble"></i></a>
+                            <a href="#"><i class="icon-youtube"></i></a>
+                        </p>
                     </div>
-                    <div class="col-md-4 wp4 delay-1s">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/portfolio-03.jpg" alt="Portfolio Item">
-                          <div class="overlay">
-                            <a href="#" class="expand"><i class="fa fa-search"></i><br>View More</a>
-                            <a class="close-overlay hidden">x</a>
-                          </div>
+
+                </div>-->
                         </div>
-                      </div>
-                      <h2>Creative Ideas</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
                     </div>
-                  </li>
-                  <li>
-                    <div class="col-md-4 wp4">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/portfolio-01.jpg" alt="Portfolio Item">
-                          <div class="overlay">
-                            <a href="#" class="expand"><i class="fa fa-search"></i><br>View More</a>
-                            <a class="close-overlay hidden">x</a>
-                          </div>
-                        </div>
-                      </div>
-                      <h2>Creative Minds</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                    </div>
-                    <div class="col-md-4 wp4 delay-05s">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/portfolio-02.jpg" alt="Portfolio Item">
-                          <div class="overlay">
-                            <a href="#" class="expand"><i class="fa fa-search"></i><br>View More</a>
-                            <a class="close-overlay hidden">x</a>
-                          </div>
-                        </div>
-                      </div>
-                      <h2>Creative Hearts</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                    </div>
-                    <div class="col-md-4 wp4 delay-1s">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/portfolio-03.jpg" alt="Portfolio Item">
-                          <div class="overlay">
-                            <a href="#" class="expand"><i class="fa fa-search"></i><br>View More</a>
-                            <a class="close-overlay hidden">x</a>
-                          </div>
-                        </div>
-                      </div>
-                      <h2>Creative Ideas</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="ignite-cta text-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <a href="#" class="ignite-btn">Ignite Your Passion</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <section class="team text-center section-padding" id="team">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <h1 class="arrow">We're a team that adore what we do</h1>
-              </div>
-            </div>
-            <div class="row">
-              <div class="team-wrapper">
-                <div id="teamSlider">
-                  <ul class="slides">
-                    <li>
-                      <div class="col-md-4 wp5">
-                        <img src="img/Frank.png" alt="Team Member">
-                        <h2>Frank Hung</h2>
-                        <p>軟體工程師，專長是可以把咖啡因轉化為程式碼的能力。</p>
-                        <div class="social">
-                          <ul class="social-buttons">
-                            <li><a href="#" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href="#" class="social-btn"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      
-                      <div class="col-md-4 wp5 delay-05s">
-                        <img src="img/team-02.png" alt="Team Member">
-                        <h2>Cersei Lannister</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                        <div class="social">
-                          <ul class="social-buttons">
-                            <li><a href="#" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href="#" class="social-btn"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-md-4 wp5 delay-1s">
-                        <img src="img/team-03.png" alt="Team Member">
-                        <h2>Jamie Lannister</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                        <div class="social">
-                          <ul class="social-buttons">
-                            <li><a href="#" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href="#" class="social-btn"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="col-md-4 wp5">
-                        <img src="img/team-01.png" alt="Team Member">
-                        <h2>Jon Snow</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                        <div class="social">
-                          <ul class="social-buttons">
-                            <li><a href="#" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href="#" class="social-btn"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-md-4 wp5 delay-05s">
-                        <img src="img/team-02.png" alt="Team Member">
-                        <h2>Cersei Lannister</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                        <div class="social">
-                          <ul class="social-buttons">
-                            <li><a href="#" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href="#" class="social-btn"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-md-4 wp5 delay-1s">
-                        <img src="img/team-03.png" alt="Team Member">
-                        <h2>Jamie Lannister</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                        <div class="social">
-                          <ul class="social-buttons">
-                            <li><a href="#" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href="#" class="social-btn"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="subscribe text-center">
-          <div class="container">
-            <h1><i class="fa fa-paper-plane"></i><span>Subscribe to stay in the loop</span></h1>
-            <form action="#">
-              <input type="text" name="" value="" placeholder="" required>
-              <input type="submit" name="" value="Send">
-            </form>
-          </div>
-        </section>
-        <section class="dark-bg text-center section-padding contact-wrap" id="contact">
-          <a href="#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <h1 class="arrow">Drop us a line</h1>
-              </div>
-            </div>
-            <div class="row contact-details">
-              <div class="col-md-4">
-                <div class="light-box box-hover">
-                  <h2><i class="fa fa-map-marker"></i><span>Address</span></h2>
-                  <p>Level 6, 23 Pitt St, Sydney</p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="light-box box-hover">
-                  <h2><i class="fa fa-mobile"></i><span>Phone</span></h2>
-                  <p>+61 9 211 3747</p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="light-box box-hover">
-                  <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
-                  <p><a href="#">WiseMD@gmail.com</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <ul class="social-buttons">
-                  <li><a href="#" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
-                  <li><a href="#" class="social-btn"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-        <footer>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <ul class="legals">
-                  <li><a href="#">Terms &amp; Conditions</a></li>
-                  <li><a href="#">Legals</a></li>
-                </ul>
-              </div>
-              <div class="col-md-6 credit">
-                <p>Designed &amp; Developed by <a href="http://www.peterfinlan.com/">Peter Finlan</a> exclusively for <a href="http://tympanus.net/codrops/"><em>Codrops</em></a></p>
-              </div>
-            </div>
-          </div>
-        </footer>
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/waypoints.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/scripts.js"></script>
-        <script src="js/jquery.flexslider.js"></script>
-        <script src="js/modernizr.js"></script>
-      </body>
-    </html>
+</footer>
+	</div>
+
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- toCount -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+
+	
+
+	
+	</body>
+</html>
